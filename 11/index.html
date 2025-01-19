@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS中的高度与宽度</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .container {
+            height: 100vh;
+            background-color: gray;
+        }
+
+        .box {
+            /* width: 50%; */
+            min-width: 25%;
+            max-width: 50%;
+            height: 100px;
+            border: 3px solid black;
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            第一个盒子
+        </div>
+        <div class="box">
+            第二个盒子
+        </div>
+        <div class="box">
+            第三个盒子
+        </div>
+        <div class="box">
+            第四个盒子
+        </div>
+    </div>
+</body>
+
+</html>

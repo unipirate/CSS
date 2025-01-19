@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>伪元素</title>
+    <style>
+        h1::first-letter{
+            color: red;
+            font-size: 2em;
+        }
+        p::first-line{
+            color: blue;
+            font-size: 1.5em;
+        }
+        p::selection{
+            color: white;
+            background-color: black;
+        }
+        #fruits li:before{
+            content: "emoji";
+            color: green;
+            font-size: 1.5em;
+        }
+        #apple:after{
+            content: "🍎";
+        }
+        #orange:after{
+            content: "🍊";
+        }
+        #banana:after{
+            content: "🍌";
+        }
+        #fruits li::marker{
+            content: "车车"
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS 伪元素</h1>
+    <p>假文字Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas facilis labore recusandae doloremque! Enim nam libero recusandae amet totam facilis aspernatur iure, ratione tempore, nihil illum veniam consequatur! Aperiam, libero!</p>
+    <ul id="fruits">
+        <li id="apple">苹果</li>
+        <li id="orange">橘子</li>
+        <li id="banana">香蕉</li>
+    </ul>
+</body>
+</html>

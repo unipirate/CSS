@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>属性选择器</title>
+    <style>
+        /* 选择所有带有class属性的元素 */
+        span[class] {
+            color: purple;
+        }
+
+        /* 选择所有a属性并带有title元素 */
+        a[title]{
+            color: red;
+        }
+        
+        /* 选择所有a属性链接以.pdf结尾的链接 */
+        a[href$=".pdf"] {
+            color: green;
+        }
+
+        /* 选择所有a属性链接以https开头的链接 */
+        a[href^="https"] {
+            color: pink;
+        }
+    </style>
+</head>
+<body>
+    <span class="class1">这里是个紫色的段落。</span>
+    <span class="class1">这里也是个紫色的段落。</span>
+    <span>这段落不是紫色。</span>
+    <a href="" title="sea">这里是个红色的链接。</a>
+    <a href="" title="example">这里也是个红色的链接。</a>
+    <a href=".pdf">这里是个绿色的链接。</a>
+    <a href="https">这里是个粉色的链接。</a>
+    <span class="class1 class2">这里有个紫色的具有多个类别的段落。</span>
+</body>
+</html>

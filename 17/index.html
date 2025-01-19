@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>后代选择器</title>
+    <style>
+        #main-content p {
+            color: red;
+        }
+        #sub-content p {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div id="main-content">
+        <p>这里是个后代节点。</p>
+        <div id="sub-content">
+            <p>这里是个后代节点。并且是sub-content里的子节点。</p>
+        </div>
+    </div>
+    <p>这里不是后代的子节点。</p>
+</body>
+</html>

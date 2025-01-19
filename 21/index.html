@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        第一子元素与最后子元素
+        first-child and last-child
+    </title>
+    <style>
+        /* 选择每个article元素的第一个段落 */
+        article p:first-child {
+            color: red;
+        }
+
+        /* 选择每个article元素的最后一个段落 */
+        article p:last-child {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <article>
+        <p>这是第一个段落。</p>
+        <p>这是第二个段落。</p>
+        <p>这是第三个段落。</p>
+        <p>这是第四个段落。想阅读更多？<a href="">点击这里</a></p>
+    </article>
+    <article>
+        <p>这是另一篇文章的第一个段落。</p>
+        <p>这是第二个段落。</p>
+        <p>这是第三个段落。</p>
+        <p>这是第四个段落。想阅读更多？<a href="">点击这里</a></p>
+    </article>
+</body>
+</html>

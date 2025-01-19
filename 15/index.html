@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ID与Class选择器</title>
+    <style>
+        /* ID选择器 同一页面只能出现一次 */
+        #content_header {
+            text-align: center;
+            color: orange;
+        }
+        /* Class选择器 可以出现多次 */
+        .highlight {
+            text-align: center;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>标题</h2>
+    </header>
+    <h2 id="content_header">内容标签</h2>
+    <p>
+        这是一个段落。<span class="highlight">这里有需要强调的文字</span>
+    </p>
+    <p>
+        这里是另一段文字。<span class="highlight">这里也有需要强调的文字</span>
+    </p>
+</body>
+</html>
